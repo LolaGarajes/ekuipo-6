@@ -1,0 +1,125 @@
+
+body{
+  background-color:#cfceda;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.pierna {
+    padding: 20px;
+    background-color:#132f54;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: static;
+  }
+  .menu1 {
+    display:flex;
+    justify-items: normal;
+    background-color: #ffffff;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius:40px ;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style: none;
+  
+  }
+.cabeza h1{
+  font-size: 50px;
+ font-family: Franklin Gothic Medium;
+    color:#132f54;
+    padding: 10px;
+    display:flex;
+}
+ 
+  .menu2{
+    background-color: #ffdf57;
+    font-size: 30px;
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 15px 15px 15px 15px;
+ margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius:40px ;
+  }
+.menu a{
+}
+   .logolola {
+    height: 80px;
+    border-radius:15px;
+    
+  }
+ 
+  .libro{
+    height: 80px;
+    border-radius:15px;
+    margin-top: 20px;
+  }
+  
+  .busqueda {
+    
+   border-radius: 20px;
+    height: 40px;
+ width: 80%;
+    background-color:  #fdf4a7;
+    border-style: none;
+  
+  }
+  .barra{
+    width: 20%;
+    padding-top: 20px;
+  }
+  .lupa{
+    height: 40px;
+    background-color: #fdf4a7;
+    border-radius: 100%;
+
+  }
+
+  button{
+    border-radius: 50%;
+    padding: 0;
+    border-style: none;
+    height: 40px;
+    background-color: ffffff;
+    margin-top: 10px;
+    position: relative;
+  } 
+  .bienv h1{
+    font-family: Rubik  ;
+    text-align: center;
+    font-size: 50PX;;
+  }
+  .cuadro{
+    background-color: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+    margin-inline: 30%;
+    margin-bottom: 10%;
+    font-family: Gill Sans MT;
+  
+  }
+  .cuadro h1{
+    font-size: 30px;
+  }
+  .cuadro button{
+   width: 30%;
+    border-radius: 20px;
+    background-color: #cfceda;
+    border-color: #132f54;
+    text-decoration: none;
+
+  }
+  .cuadro button:hover{
+    background-color: #ffdf57;
+  }
+ .contraseña{
+  height: 40px;
+  border-radius:20px ;
+  border-style:ridge;
+  border-color:#cfceda ;
+ }
+ 
