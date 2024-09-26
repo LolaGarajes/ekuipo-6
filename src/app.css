@@ -44,8 +44,7 @@ body{
     margin-right: 10px;
     border-radius:40px ;
   }
-.menu a{
-}
+
    .logolola {
     height: 80px;
     border-radius:15px;
@@ -122,4 +121,32 @@ body{
   border-style:ridge;
   border-color:#cfceda ;
  }
- 
+ .publi h1{
+  font-family: Rubik  ;
+  text-align: center;
+  font-size: 50PX;;
+}
+.cuadropubli{
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 40px;
+  margin-inline: 30%;
+  margin-bottom: 10%;
+  font-family: Gill Sans MT;
+
+}
+.cuadropubli h1{
+  font-size: 30px;
+}
+.cuadropubli button{
+ width: 60%;
+  border-radius: 20px;
+  background-color: #cfceda;
+  border-color: #132f54;
+  text-decoration: none;
+
+}
+.cuadropubli button:hover{
+  background-color: #ffdf57;
+}
