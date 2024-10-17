@@ -50,15 +50,14 @@ relacionarse con los demás lo convierten en una figura central en su entorno so
 </p>
 <img src="#" alt="Sam">
 </div>
-<h2>Ari Acevedo Giraldo</h2>
+<h2>Daniel Mauricio usuga Cossio</h2>
 <div style="display: inline-flex
     ;">
 <img src="#" alt="negro">
 <p>
-    Conocido como Ari, es un chico muy inteligente que tiende a ser reservado con personas
-    en las que no tiene mucha confianza. A pesar de su naturaleza introvertida, Ari muestra una notable
-    capacidad para adaptarse bien a los cambios cuando se aventura fuera de su zona de confort.
-    
+    La canción trata sobre la rebelión de los esclavos africanos en América Latina y es un homenaje a la 
+    lucha por la libertad. Joe Arroyo habla en esta canción de la injusticia y el abuso de los esclavos, 
+    en especial con una mujer esclavizada, y cómo su gente se rebeló en contra de los opresores.
 </p>
 
 </div>

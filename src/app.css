@@ -5,6 +5,7 @@ body{
   padding: 0px;
   width: 100%;
 }
+/*FOOTER ----------------------------------------------------*/
 .pierna {
     padding: 20px;
     background-color:#132f54;
@@ -13,22 +14,22 @@ body{
     border-top-right-radius: 20px;
     position: static;
   }
-  .menu1 {
+  /*HEAD----------------------------------------------------*/
+ .menu1 {
     display:flex;
-    justify-items: normal;
+    justify-content: space-evenly;
     background-color: #ffffff;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius:40px ;
     margin-left: 10px;
     margin-right: 10px;
-    list-style: none;
-  
+    
   }
 .cabeza h1{
   font-size: 50px;
  font-family: Franklin Gothic Medium;
     color:#132f54;
-    padding: 10px;
+   
     display:flex;
 }
  
@@ -37,24 +38,22 @@ body{
     font-size: 30px;
     display:flex;
     justify-content: space-evenly;
-    list-style: none;
-    padding: 15px 15px 15px 15px;
- margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
+   
+
     border-radius:40px ;
   }
 
    .logolola {
     height: 80px;
     border-radius:15px;
+ 
     
   }
  
   .libro{
     height: 80px;
-    border-radius:15px;
-    margin-top: 20px;
+   
+  
   }
   
   .busqueda {
@@ -68,7 +67,7 @@ body{
   }
   .barra{
     width: 20%;
-    padding-top: 20px;
+   
   }
   .lupa{
     height: 40px;
@@ -79,13 +78,14 @@ body{
 
   button{
     border-radius: 50%;
-    padding: 0;
+
     border-style: none;
     height: 40px;
     background-color: ffffff;
-    margin-top: 10px;
+  
     position: relative;
   } 
+  /*CUADRO INICIO ----------------------------------------------------*/
   .bienv h1{
     font-family: Rubik  ;
     text-align: center;
@@ -115,12 +115,14 @@ body{
   .cuadro button:hover{
     background-color: #ffdf57;
   }
+  /*INPUT CONTRASEÑA ----------------------------------------------------*/
  .contraseña{
   height: 40px;
   border-radius:20px ;
   border-style:ridge;
   border-color:#cfceda ;
  }
+ /*CUADRO PUBLICACION ----------------------------------------------------*/
  .publi h1{
   font-family: Rubik  ;
   text-align: center;
@@ -129,24 +131,31 @@ body{
 .cuadropubli{
   background-color: #ffffff;
   border-radius: 20px;
-  text-align: center;
+  text-align: left;
   padding: 40px;
   margin-inline: 30%;
   margin-bottom: 10%;
   font-family: Gill Sans MT;
 
 }
-.cuadropubli h1{
-  font-size: 30px;
-}
+
 .cuadropubli button{
  width: 60%;
   border-radius: 20px;
   background-color: #cfceda;
   border-color: #132f54;
   text-decoration: none;
-
 }
 .cuadropubli button:hover{
   background-color: #ffdf57;
 }
+.cuadropubli input{
+  height: 50px;
+  border-radius: 10px;
+}
+.cuadropubli desc{
+  width: auto; /* Ancho automático */
+  transition: width 0.2s; /* Transición suave al cambiar el ancho */
+
+}
+/*CUADRO INICIO ----------------------------------------------------*/
