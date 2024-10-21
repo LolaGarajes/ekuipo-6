@@ -1,0 +1,312 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "6",
+  "dialect": "sqlite",
+  "tables": {
+    "jornada": {
+      "name": "jornada",
+      "columns": {
+        "id_jornada": {
+          "autoincrement": false,
+          "name": "id_jornada",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "nom_jornada": {
+          "autoincrement": false,
+          "name": "nom_jornada",
+          "type": "text(255)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "tipo_evento": {
+      "name": "tipo_evento",
+      "columns": {
+        "id_tipo_evento": {
+          "autoincrement": false,
+          "name": "id_tipo_evento",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "des_tipo_evento": {
+          "autoincrement": false,
+          "name": "des_tipo_evento",
+          "type": "text(255)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "lugares": {
+      "name": "lugares",
+      "columns": {
+        "id_lugar": {
+          "autoincrement": false,
+          "name": "id_lugar",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "nom_lugar": {
+          "autoincrement": false,
+          "name": "nom_lugar",
+          "type": "text(255)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "autores": {
+      "name": "autores",
+      "columns": {
+        "id_autor": {
+          "autoincrement": false,
+          "name": "id_autor",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "mail_autor": {
+          "autoincrement": false,
+          "name": "mail_autor",
+          "type": "text(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "nom_autor": {
+          "autoincrement": false,
+          "name": "nom_autor",
+          "type": "text(255)",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "admin": {
+      "name": "admin",
+      "columns": {
+        "id_admin": {
+          "autoincrement": false,
+          "name": "id_admin",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "contraseña": {
+          "autoincrement": false,
+          "name": "contraseña",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "eventos": {
+      "name": "eventos",
+      "columns": {
+        "id_evento": {
+          "autoincrement": false,
+          "name": "id_evento",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "titulo_evento": {
+          "autoincrement": false,
+          "name": "titulo_evento",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "desc_evento": {
+          "autoincrement": false,
+          "name": "desc_evento",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "fec_evento": {
+          "autoincrement": false,
+          "name": "fec_evento",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id_tipo_evento": {
+          "autoincrement": false,
+          "name": "id_tipo_evento",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id_lugar": {
+          "autoincrement": false,
+          "name": "id_lugar",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id_jornada": {
+          "autoincrement": false,
+          "name": "id_jornada",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id_autor": {
+          "autoincrement": false,
+          "name": "id_autor",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {
+        "eventos_id_autor_autores_id_autor_fk": {
+          "name": "eventos_id_autor_autores_id_autor_fk",
+          "tableFrom": "eventos",
+          "tableTo": "autores",
+          "columnsFrom": [
+            "id_autor"
+          ],
+          "columnsTo": [
+            "id_autor"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "eventos_id_jornada_jornada_id_jornada_fk": {
+          "name": "eventos_id_jornada_jornada_id_jornada_fk",
+          "tableFrom": "eventos",
+          "tableTo": "jornada",
+          "columnsFrom": [
+            "id_jornada"
+          ],
+          "columnsTo": [
+            "id_jornada"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "eventos_id_lugar_lugares_id_lugar_fk": {
+          "name": "eventos_id_lugar_lugares_id_lugar_fk",
+          "tableFrom": "eventos",
+          "tableTo": "lugares",
+          "columnsFrom": [
+            "id_lugar"
+          ],
+          "columnsTo": [
+            "id_lugar"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "eventos_id_tipo_evento_tipo_evento_id_tipo_evento_fk": {
+          "name": "eventos_id_tipo_evento_tipo_evento_id_tipo_evento_fk",
+          "tableFrom": "eventos",
+          "tableTo": "tipo_evento",
+          "columnsFrom": [
+            "id_tipo_evento"
+          ],
+          "columnsTo": [
+            "id_tipo_evento"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "detalles_autores_eventos": {
+      "name": "detalles_autores_eventos",
+      "columns": {
+        "id_autor": {
+          "autoincrement": false,
+          "name": "id_autor",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id_evento": {
+          "autoincrement": false,
+          "name": "id_evento",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {
+        "detalles_autores_eventos_id_evento_entos_id_evento_fk": {
+          "name": "detalles_autores_eventos_id_evento_entos_id_evento_fk",
+          "tableFrom": "detalles_autores_eventos",
+          "tableTo": "entos",
+          "columnsFrom": [
+            "id_evento"
+          ],
+          "columnsTo": [
+            "id_evento"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "detalles_autores_eventos_id_autor_autores_id_autor_fk": {
+          "name": "detalles_autores_eventos_id_autor_autores_id_autor_fk",
+          "tableFrom": "detalles_autores_eventos",
+          "tableTo": "autores",
+          "columnsFrom": [
+            "id_autor"
+          ],
+          "columnsTo": [
+            "id_autor"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
