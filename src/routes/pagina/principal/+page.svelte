@@ -1,5 +1,5 @@
 
-    <section class="news-article">
+    <section class="publicacion">
       <h3>Titulo</h3>
       <img src="#" alt="Article Image">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra lectus sem, 

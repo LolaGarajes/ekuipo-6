@@ -1,6 +1,6 @@
 
 body{
-  background-color:#cfceda;
+  /*background-image: ;*/
   margin: 0px;
   padding: 0px;
   width: 100%;
@@ -21,8 +21,8 @@ body{
     background-color: #ffffff;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius:40px ;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
     
   }
 .cabeza h1{
@@ -34,12 +34,10 @@ body{
 }
  
   .menu2{
-    background-color: #ffdf57;
     font-size: 30px;
     display:flex;
     justify-content: space-evenly;
-   
-
+    height:60px;
     border-radius:40px ;
   }
 
@@ -158,4 +156,7 @@ body{
   transition: width 0.2s; /* Transición suave al cambiar el ancho */
 
 }
-/*CUADRO INICIO ----------------------------------------------------*/
+/*PRINCIPAL ----------------------------------------------------*/
+.publicacion{
+  background-color: #FFFFFF;
+}
