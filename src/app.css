@@ -1,6 +1,6 @@
 
 body{
-  /*background-image: ;*/
+  background-image:url("https://res.cloudinary.com/donhib3cp/image/upload/v1729640976/lola_zsjiwj.jpg"); 
   margin: 0px;
   padding: 0px;
   width: 100%;
@@ -13,6 +13,9 @@ body{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: static;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
   }
   /*HEAD----------------------------------------------------*/
  .menu1 {
@@ -39,11 +42,26 @@ body{
     justify-content: space-evenly;
     height:60px;
     border-radius:40px ;
+    background-color: #ffdf57;
+    padding: 5px 5px 5px 5px;
+    list-style-type: none;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+    
+  }
+  .menu2 li{
+    padding-top: 10px;
+  }
+  .menu li a{
+   text-decoration:none;
   }
 
    .logolola {
     height: 80px;
     border-radius:15px;
+    margin-top: 10px;
  
     
   }
@@ -71,25 +89,19 @@ body{
     height: 40px;
     background-color: #fdf4a7;
     border-radius: 100%;
-
-  }
-
-  button{
-    border-radius: 50%;
-
-    border-style: none;
-    height: 40px;
-    background-color: ffffff;
-  
-    position: relative;
   } 
+  button{
+    height: 40px;
+    border-style: none;
+  }
   /*CUADRO INICIO ----------------------------------------------------*/
-  .bienv h1{
+  .mensaje-bienvenida{
     font-family: Rubik  ;
     text-align: center;
-    font-size: 50PX;;
+    font-size: 40PX;;
   }
   .cuadro{
+    margin-top:50px;
     background-color: #ffffff;
     border-radius: 20px;
     text-align: center;
@@ -157,6 +169,75 @@ body{
 
 }
 /*PRINCIPAL ----------------------------------------------------*/
-.publicacion{
-  background-color: #FFFFFF;
+
+.evento-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 100px;
+}
+
+.evento-fecha {
+  font-size: 1.2em;
+  color: #132f54;
+}
+
+.evento-imagen img {
+  max-width:700px;
+  min-width: 700px;
+  max-height: 700px;
+  min-height: 700px;
+  height: auto;
+  display: block;
+}
+
+.evento-descripcion {
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.evento-detalles {
+  padding: 20px;
+  background-color:#ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.evento-detalles h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.evento-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-item {
+  flex: 1;
+  min-width: 150px;
+}
+
+.info-item h3 {
+  font-size: 1.2em;
+  color: #6a9fb5;
+  margin-bottom: 5px;
+}
+
+.info-item p {
+  font-size: 1em;
+  color: #555;
+}
+.seccion{
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 100px;
 }

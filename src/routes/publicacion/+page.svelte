@@ -1,3 +1,7 @@
+<div class="salida">
+    <a href="../"><img src="https://res.cloudinary.com/donhib3cp/image/upload/v1724352997/images%20pagina/c0tqayrqkh5ulx2xqedz.jpg" class= "logolola"alt="logolola " /></a>
+    <h1>inicio</h1>
+</div>
 <script lang="ts">
 	
     let input: HTMLInputElement | undefined = $state(undefined);
@@ -70,8 +74,8 @@ async function onChange() {
 </script>
 
 <div class="publi">
-    <h1>PUBLICACIÓN</h1>
 <div  class="cuadropubli">
+    <h1>PUBLICACIÓN</h1>
     <input
         name="Imagen"
         bind:this={input}

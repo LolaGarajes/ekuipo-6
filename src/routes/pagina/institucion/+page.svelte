@@ -1,4 +1,4 @@
-<section class="news-article">
+<section class="seccion">
 
     <h1>Reseña Histórica</h1>
     

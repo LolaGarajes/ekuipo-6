@@ -1,3 +1,4 @@
+<section class="seccion">
 <h1>Lola Garajes</h1>
 
 <img src="#" alt="pato" />
@@ -86,3 +87,4 @@
 	</p>
 	<img src="#" alt="Josued" />
 </div>
+</section>
